@@ -1,0 +1,18 @@
+<html>
+<body onload="start Timer()">
+<p>seconds u have spent in viewing this page::</p>
+<a id="sofar"></a>
+</body>
+<script>
+<var seconds=0;
+function start Timer()
+{
+window.setInterval("update Timer()",10);
+}
+
+function update Timer()
+{
+seconds++;
+sofar.innerText=seconds;
+</script>
+</html>
